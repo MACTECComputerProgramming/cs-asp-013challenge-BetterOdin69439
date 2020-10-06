@@ -13,17 +13,17 @@
         <Label Content="site." HorizontalAlignment="Left" Margin="10,87,0,0" VerticalAlignment="Top"/>
         <Label Content="*** Sorry at this time you can only order one sub at a time. We need a better web " HorizontalAlignment="Left" Margin="398,61,0,0" VerticalAlignment="Top" FontSize="10"/>
         <Label Content="Sub size" HorizontalAlignment="Left" Margin="52,125,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <RadioButton x:Name="sixinchRadio" Content="Six inch sub ( $3.50)" HorizontalAlignment="Left" Margin="170,131,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <RadioButton x:Name="footlongRadio" Content="Foot Long Sub ( $5.00)" HorizontalAlignment="Left" Margin="377,131,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <RadioButton x:Name="sixinchRadio" Content="Six inch sub ( $3.50)" HorizontalAlignment="Left" Margin="170,131,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" GroupName="subs"/>
+        <RadioButton x:Name="footlongRadio" Content="Foot Long Sub ( $5.00)" HorizontalAlignment="Left" Margin="377,131,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" GroupName="subs"/>
         <Label Content="Bread" HorizontalAlignment="Left" Margin="60,159,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <RadioButton x:Name="wheatbread" Content="Wheat " HorizontalAlignment="Left" Margin="52,192,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14"/>
-        <RadioButton x:Name="italianbread" Content="Italian" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" FontSize="14"/>
-        <RadioButton x:Name="flatbread" Content="Flat Bread ( + $.50)" HorizontalAlignment="Left" Margin="41,240,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="wheatbread" Content="Wheat " HorizontalAlignment="Left" Margin="52,192,0,0" VerticalAlignment="Top" FontWeight="Normal" FontSize="14" GroupName="bread"/>
+        <RadioButton x:Name="italianbread" Content="Italian" HorizontalAlignment="Left" Margin="56,217,0,0" VerticalAlignment="Top" FontSize="14" GroupName="bread"/>
+        <RadioButton x:Name="flatbread" Content="Flat Bread ( + $.50)" HorizontalAlignment="Left" Margin="41,240,0,0" VerticalAlignment="Top" GroupName="bread"/>
         <Label Content="Meat" HorizontalAlignment="Left" Margin="214,159,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <RadioButton x:Name="hammeat" Content="Ham" HorizontalAlignment="Left" Margin="214,185,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="roastedchicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="183,202,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="meatball" Content="Meat Ball ( + $1.00)" HorizontalAlignment="Left" Margin="175,222,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="steak" Content="Steak ( + $1.50)" HorizontalAlignment="Left" Margin="183,243,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="hammeat" Content="Ham" HorizontalAlignment="Left" Margin="214,185,0,0" VerticalAlignment="Top" GroupName="meat"/>
+        <RadioButton x:Name="roastedchicken" Content="Roasted Chicken" HorizontalAlignment="Left" Margin="183,202,0,0" VerticalAlignment="Top" GroupName="meat"/>
+        <RadioButton x:Name="meatball" Content="Meat Ball ( + $1.00)" HorizontalAlignment="Left" Margin="175,222,0,0" VerticalAlignment="Top" GroupName="meat"/>
+        <RadioButton x:Name="steak" Content="Steak ( + $1.50)" HorizontalAlignment="Left" Margin="183,243,0,0" VerticalAlignment="Top" GroupName="meat"/>
         <Label Content="Chesse" HorizontalAlignment="Left" Margin="327,159,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <CheckBox x:Name="americanChesse" Content="American ( + $25)" HorizontalAlignment="Left" Margin="311,185,0,0" VerticalAlignment="Top" FontSize="14"/>
         <CheckBox x:Name="swissChesse" Content="Swiss ( + $30)" HorizontalAlignment="Left" Margin="327,208,0,0" VerticalAlignment="Top"/>
@@ -35,7 +35,7 @@
         <CheckBox x:Name="redonion" Content="Red Onion ( + $.10)" HorizontalAlignment="Left" Margin="500,247,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="allveggies" Content="All Veggies ( + $.25)" HorizontalAlignment="Left" Margin="500,267,0,0" VerticalAlignment="Top"/>
         <Label x:Name="labelAnswer" Content="( Your Sub Here )" HorizontalAlignment="Left" Margin="15,309,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="button1" Content="Order Here" HorizontalAlignment="Left" Margin="513,353,0,0" VerticalAlignment="Top" Width="126" Height="33" BorderBrush="White" Foreground="Black" Background="White"/>
+        <Button x:Name="button1" Content="Order Here" HorizontalAlignment="Left" Margin="513,353,0,0" VerticalAlignment="Top" Width="126" Height="33" BorderBrush="White" Foreground="Black" Background="White" Click="button1_Click"/>
         <Label Content="Special *** $2.00 Off Foot Long / Wheat / Meatball / American Chesse " HorizontalAlignment="Left" Margin="15,370,0,0" VerticalAlignment="Top" Width="383"/>
 
     </Grid>
