@@ -28,32 +28,65 @@ namespace CS_ASP_013
         private void button1_Click(object sender, RoutedEventArgs e)
         {
 
+            string subDiscription = " Six Inch ";
+
+            double subTotalPrice = 3.50;
+
+            if (footlongRadio.IsChecked == true)
+            {
+
+                subDiscription = " Foot Long ";
+
+                subTotalPrice = 5.00; 
+
+            }
 
 
+            if (wheatbread.IsChecked == true)
+            {
 
+                subDiscription = subDiscription + " Wheat Bread ";
 
+            }
 
+            else if (italianbread.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Italian Bread ";
+            }
 
+            else
+            {
+                subDiscription = subDiscription + " Flat Bread ";
 
+                subTotalPrice = subTotalPrice + .50; 
 
+            }
 
+            if (hammeat.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Ham, ";
+            }
 
+            else if (roastedchicken.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Roasted Chicken, ";
+            }
 
+            else if (meatball.IsChecked == true)
+            {
 
+                subDiscription = subDiscription + " Meatball,";
 
+                subTotalPrice = subTotalPrice + 1.00;
 
+            }
 
+            else
+            {
+                subDiscription = subDiscription + " Steak, ";
 
-
-
-
-
-
-
-
-
-
-
+                subTotalPrice = subTotalPrice + 1.50;
+            }
 
 
 
