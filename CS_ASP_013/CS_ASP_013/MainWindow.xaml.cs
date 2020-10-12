@@ -89,22 +89,74 @@ namespace CS_ASP_013
             }
 
 
+            if (americanChesse.IsChecked == true)
+            {
+                subDiscription = subDiscription + " American Cheese, ";
+
+                subTotalPrice = subTotalPrice + .25;
+            }
+
+            if (swissChesse.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Swiss Cheese, ";
+
+                subTotalPrice = subTotalPrice + .30;
+            }
+
+            if (pepperjackChesse.IsChecked == true)
+            {
+                subDiscription = subDiscription + " PepperJack Cheese, ";
+
+                subTotalPrice = subTotalPrice + .75;
+            }
 
 
+            if (cucumber.IsChecked == true) { subDiscription = subDiscription + " Cucumbers, "; }
 
+            if (greenpepper.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Green Pepper, ";
 
+                subTotalPrice = subTotalPrice + .25;
+            }
 
+            if (lettuce.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Lettuce, ";
 
+                subTotalPrice = subTotalPrice + .15;
+            }
 
+            if (redonion.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Red Onion ";
 
+                subTotalPrice = subTotalPrice + .10;
+            }
 
+            if (allveggies.IsChecked == true)
+            {
+                subDiscription = subDiscription + " Cucumbers, Green Pepper, Lettuce, Red Onion ";
 
+                subTotalPrice = subTotalPrice + .25;
+            }
 
+            if ((wheatbread.IsChecked == true) && (meatball.IsChecked == true) &&
+                (footlongRadio.IsChecked == true) && (americanChesse.IsChecked == true))
+            {
+                subDiscription = subDiscription + " Special**$2.00 Off ";
 
+                subTotalPrice = subTotalPrice - 2.00;
+            }
 
+            //Print - Sub and Total Price
 
-
+            subtextBlock.Text = subDiscription + " $ " + subTotalPrice;
 
         }
-    }
-}
+
+
+
+      }
+   
+   }
